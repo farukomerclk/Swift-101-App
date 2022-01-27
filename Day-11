@@ -1,0 +1,13 @@
+Day 11
+
+Protocols
+let you create a protocol to generalization. One protocol can inherit multiple protocols.
+It is a description of what we want. You can't create an instance of a protocol. 
+Protocols tell us what properties and types something should have.
+dont provide implementaition of methods. 
+
+Extensions
+Allows you add methoods to existing types like Int, vb.
+
+Protocol Extensions
+protocol-oriented programming allows you to create project architecture according to protolcs. then create protocol extens to create default methods.
