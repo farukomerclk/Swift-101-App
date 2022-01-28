@@ -1,0 +1,38 @@
+Day 12
+
+Optionals
+you can declare variables without value. You can later assign values.
+var age: Int? = nil
+.
+.
+.
+age = 38
+
+Unwrapping optionals
+using "if let" keyword we can decide what will happen if the variable is empty or can we use the varible methods like count,
+
+if let unwrapped = name {
+print("\(unwrapped.count) letters")
+}else{
+print("Missing name.")
+}
+
+Unwrapping with Guard
+"guard let" enable us to be sure parameter is not null, if it is, then exit the function or loop.
+func greet(_ name: String?){
+  guard let unwrapped  = name else{
+    print("name is missing!")
+    return
+  }
+}
+
+Force Unwrapping (!)
+use force unwrao when you sure the varible is not nil. this exclamation mark ❗️ converts optional varible to normal variable.
+let str = "5"
+let num = Int(str)
+casting str String to num Integer. But Swift makes it optional because you may cast something like "Fish" instead of  "5".
+so put ! to make non-optional
+let num = Int(str)!
+
+So if you are going to use foce unwrap, you gotta be so sure the varible is not nil, otherwise the program will crash.
+
