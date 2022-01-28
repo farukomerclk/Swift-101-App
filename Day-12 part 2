@@ -1,0 +1,10 @@
+Day 12 Part 2 
+
+Implicitly unwrapped optionals
+
+you dont have to use guar let or if let to make it optionals.
+ ypu can siply use 
+ let age: Int! = nil
+ But in this way you dont assign a task in case value is null. So it will crash.
+ 
+ 
